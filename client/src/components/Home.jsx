@@ -43,7 +43,7 @@ export default function Home (props) {
           <h1 className="ml10">
             <span className="text-wrapper">
             <Animated animationIn="fadeInDownBig" animationOut="fadeOut" isVisible={true}>
-              <span className="letters">Support local stores in your neighbourhood</span>
+              <span className="letters">Support local stores in your neighborhood</span>
             </Animated>
             </span>
           </h1>
