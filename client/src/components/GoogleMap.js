@@ -16,6 +16,8 @@ import FacebookIcon from '@material-ui/icons/Facebook';
 
 const MapContainer = (props) => {
 
+  const REACT_APP_GOOGLE_API_KEY = process.env.REACT_APP_GOOGLE_API_KEY;
+
   // for infoWindow 
   const [selected, setSelected] = useState({});
   const onSelect = store => {
@@ -210,7 +212,8 @@ const MapContainer = (props) => {
 
 
   const defaultCenter = {
-    lat: latitudeLocation, lng: longitudeLocation
+    lat: 45.518921, lng: -73.59474
+    //lat: latitudeLocation, lng: longitudeLocation
   }
 
   const stores = [
@@ -325,7 +328,7 @@ const MapContainer = (props) => {
   return (
 
     <LoadScript
-      googleMapsApiKey='AIzaSyB-sEvFymghaZ6CcNL2FdooPD0Dc_8ACA0'>
+      googleMapsApiKey={REACT_APP_GOOGLE_API_KEY}>
       <GoogleMap
         mapContainerStyle={mapStyles}
         zoom={14}
