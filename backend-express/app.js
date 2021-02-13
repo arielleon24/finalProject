@@ -10,7 +10,7 @@ const usersRouter = require('./routes/users');
 const stripeRouter = require('./routes/stripeRouter');
 const productsRouter = require('./routes/products');
 const dbhelpers = require('./helpers/dbhelpers');
-const dbHelpers = require('./helpers/dbhelpers')(db);
+const dbHelpers = require('./helpers/dbHelpers')(db);
 
 const app = express();
 

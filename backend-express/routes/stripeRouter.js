@@ -3,7 +3,7 @@ const app = express()
 const bodyParser = require('body-parser')
 const path = require('path')
 const postCharge = require('./src/stripe')
-require('../../db/node_modules/dotenv').config()
+require('dotenv').config()
 const router = express.Router()
 
 const stripePayment = () => {
