@@ -10,7 +10,7 @@ const REACT_STRIPE_API_KEY=process.env.REACT_STRIPE_API_KEY;
   }, [])
 
   return (
-    <StripeProvider apiKey={REACT_STRIPE_API_KEY}>
+    <StripeProvider apiKey='pk_test_51I6Jt9HsmgbtTrbqfCLFE3iOym9EzX83fUD26QzcT23sPMbAdp0lCcj0gev2ldujHpqI7HbTMa3unA5acP6UaN3U00AcA7HfMG'>
       <Elements>
         <CheckoutForm user = {user} selectedProduct={selectedProduct} history={history} />
       </Elements>

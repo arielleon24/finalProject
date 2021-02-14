@@ -212,8 +212,8 @@ const MapContainer = (props) => {
 
 
   const defaultCenter = {
-    lat: 45.518921, lng: -73.59474
-    //lat: latitudeLocation, lng: longitudeLocation
+    //lat: 45.518921, lng: -73.59474
+    lat: latitudeLocation, lng: longitudeLocation
   }
 
   const stores = [
